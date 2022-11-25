@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--uBT6xRme--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://dev-to-uploads.s3.amazonaws.com/i/qibhtrfxpeoi9zqjltdq.png" width="" alt="Nest Logo" /></a>
+  <a href="http://nestjs.com/" target="blank"><img src="logo-no-background" width="" alt="Nest Logo" /></a>
 </p>
 
 [circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
