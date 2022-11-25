@@ -45,8 +45,8 @@ $ ng serve -o
 
 ## Stay in touch
 
-- Author - [Vũ Ngọc Anh Tú](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
+- Author - Vũ Ngọc Anh Tú
+- Website - 
 - Facebook - [wrathyboo](https://www.facebook.com/wrathyboo)
 
 ## License
