@@ -14,7 +14,10 @@ async function bootstrap() {
   app.useStaticAssets(join(__dirname, '..' , 'views'));
   app.setViewEngine('hbs');
   hbs.registerPartials(join(__dirname, '..', '/views/partials'));
-  app.enableCors();
+  app.enableCors({
+    origin: 'https://chessvote-frontend.vercel.app',
+    credentials: true,
+  })
   app.useStaticAssets(join(__dirname, '..' , '/public/images'));
   // app.engine('handlebars', exhbs({defaultLayout: 'master'}))
   await app.listen(3000);

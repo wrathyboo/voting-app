@@ -1,8 +1,9 @@
-import { Controller, Get, Post, Body, Patch, Param, Delete, Render, Redirect } from '@nestjs/common';
+import { Controller, Get, Post, Body, Patch, Param, Delete, Render, Redirect, Res } from '@nestjs/common';
 import { UsersService } from './users.service';
 import { CreateUserDto } from './dto/create-user.dto';
 import { UpdateUserDto } from './dto/update-user.dto';
 import { User } from './schemas/users.schema';
+import { Response, Request } from 'express';
 
 @Controller('users')
 export class UsersController {
@@ -39,7 +40,14 @@ export class UsersController {
   findAll() {
     return this.usersService.findAll();
   }
-
+  
+  @Get('api/list')
+  async Apitshow(@Res() res: Response ) {
+    const accounts = await this.usersService.findAll();
+    res.send({
+      users: accounts
+    });
+  }
   // @Get(':id')
   // findOne(@Param('id') id: string) {
   //   return this.usersService.findOne(+id);
